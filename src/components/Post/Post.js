@@ -1,17 +1,24 @@
 import React from 'react';
 import './Post.css'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const Post = (props) => {
     const {userId  ,id  ,title , body} = props.post;
-    
+    const history = useHistory();
+    const handleClick = (postId) => {
+        const url = `/post/${postId}`;
+        history.push(url);
+    }
     return (
         <div className="postStyle">
-            <h2> UserId : {userId}</h2>
-            <h3> Id : {id}</h3>
-            <p> Title : {title}</p>
-            <p> Body : {body}</p>
-            <button><Link to={`/post/${id}`}>Details</Link></button>
+            <p className="userId"> {title}</p>
+            
+            <div className="style">
+            <button className="button" onClick = {() => handleClick(id)}>Click Me</button>
+            {/* <button className="button"><Link to={`/post/${id}`}>Details</Link></button> */}
+            <p className="id">  {id}</p>
+            </div>
+
             
         </div>
     );

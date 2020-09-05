@@ -11,7 +11,6 @@ import Home from './components/Home/Home';
 import NoMatch from './components/NoMatch/NoMatch';
 import PostDetail from './components/PostDetail/PostDetail';
 
-
 function App() {
   
   return (

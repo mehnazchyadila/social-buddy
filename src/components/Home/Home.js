@@ -10,8 +10,10 @@ const Home = () => {
   }, [])
     return (
         <div>
-            <h1> Post : {post.length}</h1>
+          <h1 className="post"> All Post</h1>
+            
       {
+        
         post.map(post => <Post post={post} ></Post> )
       }
             

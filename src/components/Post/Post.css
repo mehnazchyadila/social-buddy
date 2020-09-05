@@ -1,7 +1,41 @@
 .postStyle{
-    border : 2px solid purple;
-    margin : 20px;
+    box-shadow: 5px 5px 5px 7px lightgrey;
+    margin : 30px 500px ;
     padding : 20px;
     border-radius: 20px;
+    background-color: white;
 
 }
+.post{
+    text-align: center;
+}
+.userId{
+    background-color: darkblue;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    border-radius: 10px;
+    height: 50px;
+}
+.style{
+    display:flex;
+}
+.button {
+    margin-top: 20px;
+    background-color: #051357;
+    background-image: linear-gradient(60deg, #021158 0%,  100%); 
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    color: white;
+  }
+
+  .id{
+    width: 50px;
+    padding-left: 400px;
+  }
+
