@@ -14,7 +14,7 @@ const Post = (props) => {
             <p className="userId"> {title}</p>
             
             <div className="style">
-            <button className="button" onClick = {() => handleClick(id)}>Click Me</button>
+            <button className="button" onClick = {() => handleClick(id)}>See More</button>
             {/* <button className="button"><Link to={`/post/${id}`}>Details</Link></button> */}
             <p className="id">  {id}</p>
             </div>
